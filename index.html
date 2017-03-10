@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+	<title>Samuel Velasquez game website</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="banner">
+    <img src="img/dicegif.gif" alt="dice gif" class="logo">
+		<h1 class="headline">The Best Games</h1>
+		<span class="tagline">The best RPS and dice rolls in the best website ever.</span>
+	</div><!--/.banner-->
+  
+  <!--/.rps game-->
+  <div class="secondary col">
+    <h2> Rock paper and Scissors </h2>
+    <p>You will be playing against the computer. In the input below, type between three moves: rock, paper or scissors. Remember: <strong>Rock beats Scissors, Paper beats Rock and Scissors beats Paper.</strong></p>
+    <div class="rpsGame">
+      <label>
+        <input type="radio" name="move" id="radioRock" checked="checked"> Rock 
+      </label>
+      <label>
+        <input type="radio" name="move" id="radioPape"> Paper 
+      </label>
+      <label>
+        <input type="radio" name="move" id="radioScis"> Scissors 
+      </label>
+      <button id="play">Declare move</button>
+      <button id="toggleList1">Hide List</button>
+      <button onclick="clearRps()">clear </button>
+    </div>
+    <div class="rpsGame">
+      <ul id="rpsList">
+        <li id="rpsResult"> </li>
+      </ul>
+    </div>
+  </div>
+  <div class="primary col">
+    
+    <!--/.dice game-->
+    
+    <h2> The Dice Game</h2>
+    <p>Welcome to the dice game. click on this button to roll the virtual dice. The number you roll will determine your fate. <strong>Winning numbers: 7 and 11. Losing numbers: 2, 3 and 12. Anything else is a reroll.</strong></p>
+    <div class="diceGame">
+      <button id="diceButton">Lets Roll</button>
+      <button id="toggleList2">Hide List</button>
+      <button onclick="clearDice()">clear</button>
+      <ul id="diceList">  
+        <li id=diceResult> </li>
+      </ul>
+    </div>
+  </div>
+	 <footer class="main-footer">
+		<span>&copy;2017 Samuel Velasquez.</span>
+	 </footer>
+  <script src= "js/rps.js"></script>
+  <script src= "js/dice.js"></script>
+</body>
+</html>

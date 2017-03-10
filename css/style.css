@@ -1,0 +1,249 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom: 1.8em;
+}
+
+.headline,
+.tagline{
+  color: black;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name{
+	font-size: 1.25em;
+}
+
+.main-header{
+border: solid 1px #678;
+background: linear-gradient(#999, #fff) center;
+
+}
+
+.main-header li{
+padding-top: 0.5rem;
+border: solid 1px #678;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: royalblue;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+.headline{
+  margin-bottom: 0;
+}
+
+.main-footer {
+  border: solid 3px #678;
+  border-radius: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background: linear-gradient(bottom, #999, #fff) center;
+}
+
+.main-header,
+.main-footer {
+box-shadow: 10px 10px 50px #89a inset;
+}
+/* ---- Layout Containers ---- */
+
+
+.banner {
+	color: #fff;
+	background: linear-gradient(transparent, #fff), url("../img/dicebackground.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.wrapper {
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 0.25em 0;
+	margin-top: 30px;
+  margin-left: 1px;
+  margin-right: 1px;
+  clear: both;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+  z-index: 1;
+	width: 190px;
+  padding-top: 10px;
+}
+
+/*Columns*/
+.col{
+  max-width: 90%;
+  margin: auto;
+}
+
+.col p, .col h2{
+  text-align: left;
+}
+
+/* --Lists for DOM-- */
+.list ul li{
+  text-align: left;
+}
+/* --buttons-- */
+
+.remove{
+  display: inline-block;
+}
+
+/* ---RPS ul spacing--- */
+#rpsList{
+  margin-bottom: 40px
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 750px) {
+/* ---- Header ---- */
+  .feat-img {
+    margin: 0;
+    min-width: 100%;
+    position: relative;
+  }
+  
+  .caption{
+    position: absolute;
+   }
+  
+  .main-header {
+    margin-bottom: 1px;
+    padding-top: 1px;
+    border: solid 3px #678;
+    background: linear-gradient(#999, #fff) center;
+    border-radius: 3%;
+  }
+  
+  .main-header li {
+    border: 0;
+    border-left: solid 1px #678;
+    border-right: solid 1px #678;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .name {
+    float: left;
+    margin-left: 3rem;
+  }
+  
+  .main-nav {
+    float: right;
+    margin-right: 3rem;
+  }
+  
+  .main-nav li {
+    float: left;
+    margin-top: 1rem;
+  }
+  
+  .tagline {
+    font-size: 1.4em;
+  }
+  
+  .banner {
+    padding-top: 5%;
+  }
+  /* ---- Columns ---- */
+  .col {
+    max-width: 40%;
+    display: inline-block;
+    padding: 0.7rem;
+    vertical-align: top;
+    margin-top: 1rem;
+  }
+  
+  .col p, h2 {
+    text-align: left;
+  }
+
+  .banner {
+  padding-top: 7%;
+  }
+  /* --- Positions ---*/
+  
+  .abs {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+    .rpsInput{
+    text-align: left;
+  }
+}
+
+ /* ---RPS ul spacing--- */
+#rpsList{
+  margin-bottom: 0%;
+}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
